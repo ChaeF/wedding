@@ -363,6 +363,42 @@ body {
 }
 
 /* ─── Blessing ─── */
+/* ── Vows ── */
+#s-vows { text-align: center; }
+.vow-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+.vow-icon { font-size: 1rem; }
+.vow-date {
+  font-size: 0.82rem;
+  color: var(--cream);
+  opacity: 0.6;
+  letter-spacing: 0.06em;
+  margin-bottom: 2rem;
+}
+.vow-text {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 5.5vw, 1.6rem);
+  line-height: 1.85;
+  font-style: italic;
+  color: var(--cream);
+  margin: 0 0 1.8rem;
+  padding: 0;
+  border: none;
+}
+.vow-names {
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+
 .blessing-quote {
   font-family: var(--font-serif);
   font-size: clamp(1.2rem, 5vw, 1.45rem);
@@ -622,6 +658,24 @@ body {
   <div class="waymarker" aria-hidden="true">
     <span class="waymarker-arrow">→</span>
   </div>
+
+  <!-- VOWS -->
+  <div class="waymarker" aria-hidden="true">
+    <span class="waymarker-arrow">→</span>
+  </div>
+
+  <section class="section" id="s-vows">
+    <div class="eyebrow">서약</div>
+    <div class="vow-location">
+      <span class="vow-icon">⛪</span>
+      <span>산티아고 대성당 앞</span>
+    </div>
+    <div class="vow-date">2026년 10월 1일</div>
+    <blockquote class="vow-text">
+      "마지막 한 걸음을 함께 내딛는 이 자리에서,<br>우리는 서로에게 평생의 길동무가 되기로 약속합니다."
+    </blockquote>
+    <div class="vow-names">김동영 <span class="hl">✦</span> 은유진</div>
+  </section>
 
   <section class="section" id="s-blessing">
     <div class="eyebrow">축복을 전해주세요</div>
