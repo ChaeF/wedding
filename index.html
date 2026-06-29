@@ -1,17 +1,24 @@
 <!--
   ┌─ 사진 파일 배치 안내 ──────────────────────────────────────────┐
   │  이 HTML 파일과 같은 폴더에 아래 사진 파일을 넣어주세요:       │
-  │  · NZ9_4904.jpg  →  히어로(메인) 사진                        │
-  │  · photo2.jpg    →  갤러리 사진 2                             │
-  │  · photo3.jpg    →  갤러리 사진 3                             │
-  │  · photo4.jpg    →  갤러리 사진 4                             │
-  │  · photo5.jpg    →  갤러리 사진 5                             │
-  │  · photo6.jpg    →  갤러리 사진 6                             │
+  │  · NZ9_4904.JPG  →  히어로(메인) 사진                        │
+  │  · photo2.JPG    →  갤러리 사진 2                             │
+  │  · photo3.JPG    →  갤러리 사진 3                             │
+  │  · photo4.JPG    →  갤러리 사진 4                             │
+  │  · photo5.JPG    →  갤러리 사진 5                             │
+  │  · photo6.JPG    →  갤러리 사진 6                             │
   │  파일명이 다르다면 아래 src="" 값만 바꿔주시면 됩니다.          │
   └──────────────────────────────────────────────────────────────┘
 -->
-<title>김동영 & 은유진 — 결혼을 위한 여행</title>
+<title>김동영 & 은유진 — 산티아고 순례길</title>
 <meta name="description" content="사리아에서 산티아고로, 함께 걸어 하나가 되는 두 사람의 이야기">
+<meta property="og:title" content="김동영 ✦ 은유진 결혼합니다">
+<meta property="og:description" content="사리아에서 산티아고로, 함께 걸어 하나가 되는 두 사람의 이야기">
+<meta property="og:image" content="https://chaef.github.io/wedding/photo2.JPG">
+<meta property="og:url" content="https://chaef.github.io/wedding/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chaef.github.io/wedding/photo2.JPG">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
@@ -457,9 +464,9 @@ body {
   text-wrap: balance;
 }
 .closing-pilgrim {
-  margin: 0 auto;
-  width: 240px;
-  height: 240px;
+  margin: 0 auto 2rem;
+  width: 220px;
+  height: 220px;
 }
 
 /* ─── Footer ─── */
@@ -503,7 +510,7 @@ body {
 
   <!-- HERO -->
   <section class="hero">
-    <!-- Photo background: NZ9_4904.jpg 파일을 같은 폴더에 넣으면 표시됩니다 -->
+    <!-- Photo background: NZ9_4904.JPG 파일을 같은 폴더에 넣으면 표시됩니다 -->
     <div class="hero-photo" role="img" aria-label="김동영과 은유진"></div>
     <div class="hero-photo-fallback" id="heroFallback" style="display:none"></div>
 
@@ -513,7 +520,7 @@ body {
       <div class="shell-wrap">
         <div id="doveAnim" aria-hidden="true"></div>
       </div>
-      <div class="hero-eyebrow">결혼하러 떠나는 여행</div>
+      <div class="hero-eyebrow">둘만의 길, 하나의 시작</div>
       <h1 class="hero-names">
         김동영
         <span class="connector">✦</span>
@@ -695,7 +702,7 @@ body {
     heroPhoto.style.display = 'none';
     fallback.style.display  = 'block';
   };
-  testImg.src = 'NZ9_4904.jpg';
+  testImg.src = 'main.JPG';
 })();
 
 /* ── Star field ── */
