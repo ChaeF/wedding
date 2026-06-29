@@ -149,6 +149,15 @@ body {
   font-style: normal;
 }
 
+.hero-announce {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin: 0.4rem 0 0.8rem;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+}
+
 .hero-date {
   font-size: 0.82rem;
   letter-spacing: 0.14em;
@@ -562,8 +571,9 @@ body {
         <span class="connector">✦</span>
         은유진
       </h1>
-      <div class="hero-date">2026년 9월 24일 — 10월 1일</div>
-      <div class="hero-place">스페인 산티아고 순례길</div>
+      <div class="hero-announce">저희 결혼합니다</div>
+      <div class="hero-date">2026년 9월 24일</div>
+      <div class="hero-place">가족과 함께하는 약식 결혼식 후 산티아고로 떠납니다</div>
     </div>
 
     <div class="scroll-cue" aria-hidden="true">
@@ -582,14 +592,14 @@ body {
 
   <section class="section" id="s-concept">
     <div class="eyebrow">우리의 결혼</div>
-    <h2 class="section-title">길 위에서 하나가 되는<br>우리만의 서약</h2>
+    <h2 class="section-title">작고 소중한 식을 올리고<br>산티아고로 떠납니다</h2>
     <div class="body-text">
-      <p>하객도, 꽃길도, 버진로드도 없습니다.<br>
-         우리는 오래된 순례길을 선택했습니다.</p>
-      <p>스페인 사리아에서 산티아고까지,<br>
-         약 115km를 5일 동안 함께 걷고,<br>
-         그 끝에서 둘이 하나가 되는 서약을 나눕니다.</p>
-      <p>완주의 순간, 우리는 결혼합니다.</p>
+      <p>저희 결혼 소식을 전하며<br>
+         직접 모시지 못하는 점 너그러이 이해해 주세요.</p>
+      <p>가까운 가족과 함께 작고 소중하게 식을 올리고<br>
+         두 사람의 첫 여정으로 산티아고 순례길을 걷겠습니다.</p>
+      <p>소박하지만 진심을 담아,<br>
+         행복하게 살겠습니다.</p>
     </div>
   </section>
 
@@ -615,6 +625,24 @@ body {
     </div>
     <p class="photo-hint">잠시 멈추려면 사진 위에 손가락을 올려두세요</p>
   </div>
+
+  <!-- VOWS -->
+  <div class="waymarker" aria-hidden="true">
+    <span class="waymarker-arrow">→</span>
+  </div>
+
+  <section class="section" id="s-vows">
+    <div class="eyebrow">서약</div>
+    <div class="vow-location">
+      <span class="vow-icon">⛪</span>
+      <span>산티아고 대성당 앞</span>
+    </div>
+    <div class="vow-date">2026년 10월 1일</div>
+    <blockquote class="vow-text">
+      "마지막 한 걸음을 함께 내딛는 이 자리에서,<br>우리는 서로에게 평생의 길동무가 되기로 약속합니다."
+    </blockquote>
+    <div class="vow-names">김동영 <span class="hl">✦</span> 은유진</div>
+  </section>
 
   <!-- JOURNEY -->
   <div class="waymarker" aria-hidden="true">
@@ -648,7 +676,7 @@ body {
       </div>
       <div class="route-stop final">
         <div class="stop-label">Day 5 · 9월 29일</div>
-        <div class="stop-name">완주 ✦ 결혼</div>
+        <div class="stop-name">완주 ✦ 산티아고</div>
         <div class="stop-sub">산티아고 데 콤포스텔라 대성당 광장</div>
       </div>
     </div>
@@ -659,25 +687,7 @@ body {
     <span class="waymarker-arrow">→</span>
   </div>
 
-  <!-- VOWS -->
-  <div class="waymarker" aria-hidden="true">
-    <span class="waymarker-arrow">→</span>
-  </div>
-
-  <section class="section" id="s-vows">
-    <div class="eyebrow">서약</div>
-    <div class="vow-location">
-      <span class="vow-icon">⛪</span>
-      <span>산티아고 대성당 앞</span>
-    </div>
-    <div class="vow-date">2026년 10월 1일</div>
-    <blockquote class="vow-text">
-      "마지막 한 걸음을 함께 내딛는 이 자리에서,<br>우리는 서로에게 평생의 길동무가 되기로 약속합니다."
-    </blockquote>
-    <div class="vow-names">김동영 <span class="hl">✦</span> 은유진</div>
-  </section>
-
-  <section class="section" id="s-blessing">
+  <section class="section" id="s-blessing" style="text-align:center">
     <div class="eyebrow">축복을 전해주세요</div>
     <div class="blessing-quote">
       "함께 걸을 수 없어도,<br>
