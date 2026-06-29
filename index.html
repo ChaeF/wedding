@@ -10,7 +10,7 @@
   │  파일명이 다르다면 아래 src="" 값만 바꿔주시면 됩니다.          │
   └──────────────────────────────────────────────────────────────┘
 -->
-<title>김동영 & 은유진 — 우리만의 결혼 여정</title>
+<title>김동영 & 은유진 — 산티아고 순례길</title>
 <meta name="description" content="사리아에서 산티아고로, 함께 걸어 하나가 되는 두 사람의 이야기">
 <meta property="og:title" content="김동영 ✦ 은유진 결혼합니다">
 <meta property="og:description" content="사리아에서 산티아고로, 함께 걸어 하나가 되는 두 사람의 이야기">
@@ -408,6 +408,116 @@ body {
   color: var(--gold);
 }
 
+/* ── D-day countdown ── */
+.dday-wrap {
+  margin-top: 2rem;
+  text-align: center;
+}
+.dday-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.dday-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dday-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(242,178,50,0.25);
+  border-radius: 10px;
+  padding: 0.75rem 0.6rem 0.55rem;
+  min-width: 3.4rem;
+}
+.dday-unit span {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 7vw, 2.2rem);
+  color: var(--cream);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.dday-unit em {
+  font-style: normal;
+  font-size: 0.62rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  margin-top: 0.35rem;
+}
+.dday-colon {
+  font-size: clamp(1.4rem, 6vw, 2rem);
+  color: var(--gold);
+  line-height: 1;
+  opacity: 0.5;
+  margin-bottom: 0.8rem;
+}
+.dday-date {
+  margin-top: 1rem;
+  font-size: 0.78rem;
+  color: var(--stone);
+  letter-spacing: 0.1em;
+}
+
+/* ── Parents ── */
+.parents-wrap {
+  margin-top: 2rem;
+}
+.parents-card {
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  background: rgba(255,255,255,0.03);
+}
+.parents-card-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;
+  padding: 0.55rem 0;
+}
+.pc-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  line-height: 1.6;
+  width: 1.4rem;
+  text-align: center;
+}
+.pc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.pc-role {
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+.pc-top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.pc-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cream);
+  letter-spacing: 0.06em;
+}
+.pc-parents {
+  font-size: 1rem;
+  color: rgba(237,229,216,0.7);
+  letter-spacing: 0.03em;
+}
+.parents-divider {
+  height: 1px;
+  background: rgba(242,178,50,0.12);
+  margin: 0.2rem 0;
+}
+
 .blessing-quote {
   font-family: var(--font-serif);
   font-size: clamp(1.2rem, 5vw, 1.45rem);
@@ -601,6 +711,32 @@ body {
       <p>소박하지만 진심을 담아,<br>
          행복하게 살겠습니다.</p>
     </div>
+
+    <div class="parents-wrap">
+      <div class="parents-card">
+        <div class="parents-card-row">
+          <div class="pc-icon">🤵</div>
+          <div class="pc-info">
+            <span class="pc-role">신랑</span>
+            <span class="pc-top">
+              <span class="pc-parents">김은경 · 마민경의 아들</span>
+              <span class="pc-name">김동영</span>
+            </span>
+          </div>
+        </div>
+        <div class="parents-divider"></div>
+        <div class="parents-card-row">
+          <div class="pc-icon">👰</div>
+          <div class="pc-info">
+            <span class="pc-role">신부</span>
+            <span class="pc-top">
+              <span class="pc-parents">은현술 · 김해숙의 딸</span>
+              <span class="pc-name">은유진</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- PHOTO GALLERY -->
@@ -698,6 +834,20 @@ body {
       우리가 산티아고에 닿는 그 순간,<br>
       여러분의 응원이 함께하기를 바랍니다.
     </p>
+
+    <div class="dday-wrap">
+      <div class="dday-label">결혼식까지</div>
+      <div class="dday-counter">
+        <div class="dday-unit"><span id="cd-days">--</span><em>일</em></div>
+        <div class="dday-colon">:</div>
+        <div class="dday-unit"><span id="cd-hours">--</span><em>시간</em></div>
+        <div class="dday-colon">:</div>
+        <div class="dday-unit"><span id="cd-mins">--</span><em>분</em></div>
+        <div class="dday-colon">:</div>
+        <div class="dday-unit"><span id="cd-secs">--</span><em>초</em></div>
+      </div>
+      <div class="dday-date">2026. 09. 24</div>
+    </div>
   </section>
 
   <!-- ACCOUNTS -->
@@ -767,6 +917,32 @@ body {
     fallback.style.display  = 'block';
   };
   testImg.src = 'main.JPG';
+})();
+
+/* ── D-day countdown logic ── */
+(function () {
+  const target = new Date('2026-09-24T13:00:00+09:00');
+  const pad = n => String(n).padStart(2, '0');
+  function tick() {
+    const diff = target - Date.now();
+    if (diff <= 0) {
+      document.getElementById('cd-days').textContent  = '00';
+      document.getElementById('cd-hours').textContent = '00';
+      document.getElementById('cd-mins').textContent  = '00';
+      document.getElementById('cd-secs').textContent  = '00';
+      return;
+    }
+    const days  = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins  = Math.floor((diff % 3600000)  / 60000);
+    const secs  = Math.floor((diff % 60000)    / 1000);
+    document.getElementById('cd-days').textContent  = pad(days);
+    document.getElementById('cd-hours').textContent = pad(hours);
+    document.getElementById('cd-mins').textContent  = pad(mins);
+    document.getElementById('cd-secs').textContent  = pad(secs);
+  }
+  tick();
+  setInterval(tick, 1000);
 })();
 
 /* ── Star field ── */
